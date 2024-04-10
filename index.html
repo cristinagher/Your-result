@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>Proyecto Base</h1>
-</body>
+  </head>
+  <body>
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__label">Your Result</h2>
+        <div class="card__circle">
+          <span class="card__number">76</span>
+          <span class="minicard__number minicard__number--oppacity">of 100</span>
+        </div>
+        <span class="card__title">Great</span>
+        <p class="card__text">Your performance exceed 65% of the people conducting the test here!</p>
+      </div>
+      <div class="card__bottom">
+        <h2 class="card__label card__label--dark">Summary</h2>
+        <div class="minicard minicard--red">
+          <div class="image-container">
+            <img class="image" src="./assets/images/icon-memory.svg" alt="" />
+            <span class="category category--red">Memory</span>
+          </div>
+          <div>
+            <span class="minicard__number">80</span>
+            <span class="minicard__number minicard__number--oppacity">/ 100</span>
+          </div>
+        </div>
+
+        <div class="minicard minicard--yellow">
+          <div class="image-container">
+            <img class="image" src="./assets/images/icon-reaction.svg" alt="" />
+            <span class="category category--yellow">Reaction</span>
+          </div>
+          <div>
+            <span class="minicard__number">92</span>
+            <span class="minicard__number minicard__number--oppacity">/ 100</span>
+          </div>
+        </div>
+
+        <div class="minicard minicard--green">
+          <div class="image-container">
+            <img class="image" src="./assets/images/icon-verbal.svg" alt="" />
+            <span class="category category--green">Verbal</span>
+          </div>
+          <div>
+            <span class="minicard__number">61</span>
+            <span class="minicard__number minicard__number--oppacity">/ 100</span>
+          </div>
+        </div>
+
+        <div class="minicard minicard--blue">
+            <div class="image-container">
+                <img class="image" src="./assets/images/icon-visual.svg" alt="" />
+                <span class="category category--blue">Visual</span>
+            </div>
+            <div>
+                <span class="minicard__number">73</span>
+                <span class="minicard__number minicard__number--oppacity">/ 100</span>
+            </div>
+        
+
+
+          </span>
+        </div>
+
+        <a class="button button-big">Continue</a>
+      </div>
+    </article>
+  </body>
 </html>
