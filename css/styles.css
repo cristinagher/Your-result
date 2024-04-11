@@ -21,7 +21,7 @@ ul {
 
 body {
   margin: 0;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 :root {
   --primary-color: linear-gradient(#7755ff, #2f2ce9);
@@ -34,7 +34,14 @@ body {
   margin-top: 24px;
   margin-bottom: 24px;
 }
+
+.card__label--dark {
+  color: #303b59;
+  margin-bottom: 24px;
+}
+
 .card {
+  position: relative;
   width: 375px;
   height: 809px;
   background-color: white;
@@ -60,6 +67,11 @@ body {
 .minicard__number {
   font-size: 1rem;
   font-weight: 700;
+  color: #303b59;
+}
+
+.minicard__number--oppacity {
+  color: rgba(0, 58, 216, 0.2);
 }
 
 .card__title {
@@ -67,10 +79,6 @@ body {
   font-weight: 700;
   color: white;
   margin-bottom: 8px;
-}
-
-.minicard__number--oppacity {
-  color: #cac9ff;
 }
 
 .card__text {
@@ -90,14 +98,17 @@ body {
   border-bottom-right-radius: 32px;
   background-image: var(--primary-color);
   text-align: center;
-}
-.card__bottom {
-  text-align: center;
+  margin-bottom: 24px;
 }
 
 .minicard {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
   width: 315px;
   height: 56px;
+  border-radius: 0.75rem;
+  margin-bottom: 16px;
 }
 
 .image {
@@ -109,7 +120,48 @@ body {
   background-color: rgba(255, 85, 85, 0.05);
   justify-content: space-between;
 }
+
+.minicard--yellow {
+  display: flex;
+  background-color: rgba(255, 176, 30, 0.05);
+  justify-content: space-between;
+}
+
+.minicard--green {
+  display: flex;
+  background-color: rgba(0, 187, 143, 0.05);
+  justify-content: space-between;
+}
+
+.minicard--blue {
+  display: flex;
+  background-color: rgba(17, 37, 214, 0.05);
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
 .image-container {
   display: flex;
   gap: 12px;
+}
+
+.minicard__number--first {
+  color: #cac9ff;
+}
+
+.button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 19.6875rem;
+  height: 3.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 128px;
+  padding: 16px 120px;
+  color: white;
+  background-color: #303b59;
+}
+
+.card__bottom {
+  padding-inline: 30px;
 }
